@@ -1,0 +1,119 @@
+\documentclass[a0,portrait]{a0poster}
+\usepackage[utf8]{inputenc}
+
+\usepackage{multicol} % This is so we can have multiple columns of text side-by-side
+\columnsep=100pt % This is the amount of white space between the columns in the poster
+\columnseprule=3pt % This is the thickness of the black line between the columns in the poster
+
+\usepackage[svgnames]{xcolor} % Specify colors by their 'svgnames', for a full list of all colors available see here: http://www.latextemplates.com/svgnames-colors
+
+\usepackage{times} % Use the times font
+%\usepackage{palatino} % Uncomment to use the Palatino font
+
+\usepackage{graphicx} % Required for including images
+\graphicspath{{figures/}} % Location of the graphics files
+\usepackage{booktabs} % Top and bottom rules for table
+\usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures
+\usepackage{amsfonts, amsmath, amsthm, amssymb} % For math fonts, symbols and environments
+\usepackage{wrapfig} % Allows wrapping text around tables and figures
+\definecolor{ku}{RGB}{144,26,30}
+\definecolor{ku-yellow}{RGB}{255,249,25}
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%   POSTER HEADER 
+%----------------------------------------------------------------------------------------
+
+% The header is divided into two boxes:
+% The first is 75% wide and houses the title, subtitle, names, university/organization and contact information
+% The second is 25% wide and houses a logo for your university/organization or a photo of you
+% The widths of these boxes can be easily edited to accommodate your content as you see fit
+
+
+
+\begin{minipage}[t]{0.60\linewidth}
+\vspace{9.5cm}
+\Huge \color{ku} \textbf{Euphemia Haynes} \color{Black}\\ % Title
+\huge\textit{First African American Woman with a PhD}\\[1cm] % Subtitle
+
+\end{minipage}
+%
+\begin{minipage}[t]{0.40\linewidth}
+\vspace{9.5cm}
+\flushright
+\color{DarkSlateGray}
+\Large \textbf{Authors:}\\
+Daniel Vogt\\
+Steven Coletti\\
+Shaun \\
+Xinyuan \\
+Joe \\
+\end{minipage}
+
+\vspace{1cm} % A bit of extra whitespace between the header and poster content
+
+%----------------------------------------------------------------------------------------
+
+\begin{multicols}{2} % This is how many columns your poster will be broken into, a portrait poster is generally split into 2 columns
+
+%----------------------------------------------------------------------------------------
+%  PICTURE
+%----------------------------------------------------------------------------------------
+
+\color{ku} % Navy color for the picture
+% Make sure that the euphemia.jpg file is in the same directory as your .tex file 
+\begin{center}
+	\includegraphics[width=.8\linewidth]{euphemia.jpg}
+\end{center}
+
+
+%----------------------------------------------------------------------------------------
+%   EARLY LIFE
+%----------------------------------------------------------------------------------------
+
+\color{SaddleBrown} % SaddleBrown color for the introduction
+
+\section*{Early Life}
+
+
+
+%----------------------------------------------------------------------------------------
+%   MID LIFE
+%----------------------------------------------------------------------------------------
+
+\color{DarkSlateGray} % DarkSlateGray color for the rest of the content
+
+\section*{Mid Life}
+
+%----------------------------------------------------------------------------------------
+%   LATE LIFE
+%----------------------------------------------------------------------------------------
+
+\section*{Late Life}
+
+%------------------------------------------------
+%	CONTRIBUTIONS
+%------------------------------------------------
+
+\section*{Contributions}
+
+
+%----------------------------------------------------------------------------------------
+%   THESIS 
+%----------------------------------------------------------------------------------------
+
+\section*{Thesis}
+
+
+%----------------------------------------------------------------------------------------
+%   CONCLUSIONS
+%----------------------------------------------------------------------------------------
+
+\color{SaddleBrown} % SaddleBrown color for the conclusions to make them stand out
+
+\section*{Conclusions}
+
+
+\color{DarkSlateGray} % Set the color back to DarkSlateGray for the rest of the content
+\end{multicols}
+\end{document}
